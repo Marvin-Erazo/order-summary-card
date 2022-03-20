@@ -1,0 +1,151 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+//variables
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+$font: 'Red Hat Display', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: $pale-blue;
+    font-family: $font;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+
+    a{
+        color: $bright-blue;
+    }
+}
+
+
+.order-card{
+    height: max-content;
+    width: 375px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+
+    .order-description,
+    .order-plan,
+    .payment{
+        margin: 0px 40px;
+    }
+    
+    .hero{
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        margin-bottom: 30px;
+    }
+
+    .order-description{
+
+        margin-bottom: 20px;
+
+        h2{
+            color: $dark-blue;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-size: 16px;
+            color: $desaturated-blue;
+        }
+    }
+
+    .order-plan{
+        display: flex;
+        align-items: center;
+        background-color: $very-pale-blue;
+        border-radius: 10px;
+        padding: 15px ;
+
+        .plan-content{
+            display: flex;
+            width: 70%;
+        }
+
+        a{
+            color: $bright-blue;
+            font-weight: 700;
+            text-align: right;
+            float: right;
+            width: 30%;
+        }
+
+        .plan{
+            margin-left: 20px;
+            font-size: 16px;
+
+            #plan{
+                margin-bottom: 5px;
+                font-weight: 900;
+            }
+
+            #price{
+                color: $desaturated-blue;
+            }
+        }
+    }
+
+    .payment{
+        padding: 20px 0px;
+
+
+        .proceed{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            border-radius: 5px;
+            background-color: $bright-blue;
+            font-size: 14px;
+            color: $very-pale-blue;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .proceed:hover{
+            cursor: pointer;
+        }
+
+        .cancel{
+            color: $desaturated-blue;
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .order-card{
+        width: 90%;
+        margin: auto;
+
+        .order-description,
+        .order-plan,
+        .payment{
+            margin: 0px 20px;
+        }
+    }
+}

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 10pt;
+}
+
+footer a {
+  color: #3829e0;
+}
+
+.order-card {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 375px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.order-card .order-description,
+.order-card .order-plan,
+.order-card .payment {
+  margin: 0px 40px;
+}
+
+.order-card .hero {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 30px;
+}
+
+.order-card .order-description {
+  margin-bottom: 20px;
+}
+
+.order-card .order-description h2 {
+  color: #1f2f56;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.order-card .order-description p {
+  font-size: 16px;
+  color: #7280a7;
+}
+
+.order-card .order-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.order-card .order-plan .plan-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+}
+
+.order-card .order-plan a {
+  color: #3829e0;
+  font-weight: 700;
+  text-align: right;
+  float: right;
+  width: 30%;
+}
+
+.order-card .order-plan .plan {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.order-card .order-plan .plan #plan {
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.order-card .order-plan .plan #price {
+  color: #7280a7;
+}
+
+.order-card .payment {
+  padding: 20px 0px;
+}
+
+.order-card .payment .proceed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #3829e0;
+  font-size: 14px;
+  color: #f5f7ff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.order-card .payment .proceed:hover {
+  cursor: pointer;
+}
+
+.order-card .payment .cancel {
+  color: #7280a7;
+}
+
+@media screen and (max-width: 375px) {
+  .order-card {
+    width: 90%;
+    margin: auto;
+  }
+  .order-card .order-description,
+  .order-card .order-plan,
+  .order-card .payment {
+    margin: 0px 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
