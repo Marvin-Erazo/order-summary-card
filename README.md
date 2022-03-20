@@ -20,14 +20,18 @@ Order summary card created with HTML and SASS
 
 Mobile 
 
+![order-summary-card-mobile](https://user-images.githubusercontent.com/90436675/159144040-dec38240-3e48-445e-b148-7c8a40ab521b.png)
+
 
 Desktop
+
+![order-summary-card-desktop](https://user-images.githubusercontent.com/90436675/159144044-4c58d9e1-b822-4555-8889-41c1c9777d7a.png)
 
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/Marvin-Erazo/order-summary-card/
+- Live Site URL: https://order-summary-card-me.netlify.app/
 
 ## My process
 
